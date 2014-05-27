@@ -74,10 +74,8 @@ LOCAL_SRC_FILES:= \
 	xlate/xlate.c\
 	xml/apr_xml.c
 LOCAL_STATIC_LIBRARIES:= \
-	libexpat\
 	libiconv\
 	libapr-1\
-	libsqlite\
 	libpq\
 	libodbc\
 	libltdl\
@@ -85,7 +83,9 @@ LOCAL_STATIC_LIBRARIES:= \
 	libsybdb
 LOCAL_SHARED_LIBRARIES:= \
 	libssl\
-	libcrypto
+	libcrypto\
+	libexpat\
+	libsqlite
 LOCAL_MODULE := libaprutil-1
 
 include $(BUILD_STATIC_LIBRARY)
