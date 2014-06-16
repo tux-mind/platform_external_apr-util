@@ -18,6 +18,7 @@ LOCAL_C_INCLUDES:= \
 	external/libmysqlclient/include\
 	external/sqlite/dist\
 	external/freetds/include\
+	external/freetds/generated/android/include\
 	external/apr/include\
 	external/openssl/include\
 	external/bdb/build_android\
