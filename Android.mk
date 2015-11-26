@@ -15,7 +15,6 @@ LOCAL_C_INCLUDES:= \
 	$(LOCAL_PATH)/crypto/glibc_crypt\
 	external/postgresql/src/interfaces/libpq\
 	external/postgresql/src/include\
-	external/libmysqlclient/include\
 	external/sqlite/dist\
 	external/freetds/include\
 	external/freetds/generated/android/include\
@@ -48,7 +47,6 @@ LOCAL_SRC_FILES:= \
 	crypto/uuid.c\
 	dbd/apr_dbd.c\
 	dbd/apr_dbd_freetds.c\
-	dbd/apr_dbd_mysql.c\
 	dbd/apr_dbd_odbc.c\
 	dbd/apr_dbd_pgsql.c\
 	dbd/apr_dbd_sqlite3.c\
@@ -80,11 +78,10 @@ LOCAL_STATIC_LIBRARIES:= \
 	libpq\
 	libodbc\
 	libltdl\
-	libmysqlclient\
-	libsybdb
-LOCAL_SHARED_LIBRARIES:= \
+	libsybdb\
 	libssl\
-	libcrypto\
+	libcrypto_static
+LOCAL_SHARED_LIBRARIES:= \
 	libexpat\
 	libsqlite
 LOCAL_MODULE := libaprutil-1
