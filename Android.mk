@@ -79,7 +79,7 @@ LOCAL_STATIC_LIBRARIES:= \
 	libodbc\
 	libltdl\
 	libsybdb\
-	libssl\
+	libssl_static\
 	libcrypto_static
 LOCAL_SHARED_LIBRARIES:= \
 	libexpat\
